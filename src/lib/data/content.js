@@ -65,7 +65,7 @@ export const content = {
       secondary: "Cómo funciona",
     },
 
-    image: "/hero.webp",
+    image: "/hero2.png",
   },
 
   differentiators: {
@@ -92,7 +92,7 @@ export const content = {
     ],
   },
 
-  painPoints: {
+  problems: {
     badge: "Sabemos lo incómodo que es",
 
     title: "Lavar un edredón puede ser un gran problema",
@@ -107,7 +107,7 @@ export const content = {
     conclusion:
       "Nosotros nos encargamos de todo por ti.",
 
-    image: "/images/problems/woman-holding-duvet.jpg",
+    image: "/problem.png",
   },
 
   howItWorks: {
@@ -145,59 +145,47 @@ export const content = {
     ],
   },
 
-  pricing: {
-    badge: "Precios simples, siempre",
+ pricing: {
+  badge: "Precios simples y transparentes",
 
-    title: "Precio único, sin importar el tamaño",
+  title: "Sin enredos por tamaños",
 
-    subtitle:
-      "Edredones regulares y de plumas con proceso especializado según el relleno.",
+  main: {
+    image: "/pricing.png",
 
-    cards: [
-      {
-        title: "Edredón regular",
+    label: "Edredones regulares",
 
-        price: "S/35",
+    description:
+      "Lavado industrial con secado completo para evitar humedad y malos olores.",
 
-        note: "Precio único",
-      },
+    price: "35",
 
-      {
-        title: "Edredón de plumas",
-
-        price: "S/45",
-
-        note: "Cuidado especializado",
-      },
-    ],
-
-    promotions: [
-      {
-        title: "3 edredones o más",
-
-        description:
-          "Recojo y entrega gratis en ventana fija",
-      },
-
-      {
-        title: "Días de ruta por zonas",
-
-        description:
-          "10% OFF ajustándose al horario programado",
-      },
-    ],
-
-    delivery: {
-      title: "Recojo y entrega",
-
-      price: "S/10",
-
-      subtitle: "Servicio a domicilio",
-    },
-
-    image: "/images/pricing/folded-duvets.jpg",
+    note: "+ S/10 por recojo y entrega"
   },
 
+  promos: [
+    {
+      quantity: "Edredones de plumas",
+      price: "45",
+      save: "Cuidado especial"
+    },
+
+    {
+      quantity: "3 edredones o más",
+      price: null,
+      save: "Recojo y entrega gratis"
+    },
+
+    {
+      quantity: "Rutas programadas",
+      price: null,
+      save: "10% OFF por ventana fija"
+    }
+  ],
+
+  legal:
+    "El precio aplica para edredones en condiciones normales de uso. Si existe suciedad excesiva o condiciones especiales, se informará antes de continuar."
+},
   qualityChecklist: {
     badge: "Checklist de calidad",
 
@@ -211,6 +199,35 @@ export const content = {
       "Embolsado limpio y seguro",
     ],
   },
+  whyUs: {
+  badge: "¿Por qué elegirnos?",
+
+  title: "Tu edredón vuelve limpio, seco y listo para usar",
+
+  image: "/whyUs.png",
+
+  items: [
+    {
+      title: "Más de 10 años",
+      description: "Experiencia cuidando edredones y textiles delicados.",
+    },
+
+    {
+      title: "Productos premium",
+      description: "Usamos productos de alta calidad y amigables con tu salud.",
+    },
+
+    {
+      title: "Resultados impecables",
+      description: "Lavado profundo, secado completo y acabado esponjoso.",
+    },
+
+    {
+      title: "Atención rápida",
+      description: "Recojo y entrega puntual con atención cercana y confiable.",
+    },
+  ],
+},
 
   benefits: {
     title: "¿Por qué elegirnos?",
@@ -239,38 +256,29 @@ export const content = {
   },
 
   coverage: {
-    badge: "Zona de cobertura",
+  badge: "Zona de cobertura",
 
-    title: "Llegamos a donde estés",
+  title: "Llegamos a donde estés",
 
-    districts: [
-      "Miraflores",
-      "San Isidro",
-      "Barranco",
-      "San Borja",
-      "Surco",
-    ],
+  zones: [
+    "Miraflores",
+    "San Isidro",
+    "Barranco",
+  ],
 
-    routes: [
-      {
-        day: "Martes",
-        zones: "San Isidro / San Borja",
-      },
+  mapImage: "/map.png",
 
-      {
-        day: "Jueves",
-        zones: "Miraflores / Barranco",
-      },
+  testimonial: {
+    image: "/bed.png",
 
-      {
-        day: "Sábado",
-        zones: "Surco",
-      },
-    ],
+    badge: "Clientes que nos recomiendan",
 
-    mapImage: "/images/coverage/map.jpg",
+    quote:
+      "Excelente servicio, súper puntuales y mi edredón quedó como nuevo. ¡Totalmente recomendados!",
+
+    author: "Fiorella M. — Miraflores",
   },
-
+},
   testimonials: {
     badge: "Clientes que nos recomiendan",
 
@@ -295,14 +303,24 @@ export const content = {
     ],
   },
 
-  finalCTA: {
-    title: "Agenda tu recojo hoy mismo",
+  cta: {
+  badge: "Recojo rápido y atención inmediata",
 
-    subtitle:
-      "Y olvídate de lavar edredones para siempre.",
+  title: "Agenda tu recojo hoy mismo",
 
-    button: "Escríbenos por WhatsApp",
+  highlighted:
+    "y vuelve a disfrutar tu edredón limpio, seco y esponjoso.",
+
+  description:
+    "Recojo y entrega a domicilio con lavado industrial, secado completo y cuidado especial para cada tipo de edredón.",
+
+  image: "/cta.png",
+
+  button: {
+    text: "Escríbenos por WhatsApp",
+    subtext: "Respuesta rápida",
   },
+},
 
   legal: {
     title: "Información importante",
@@ -319,24 +337,68 @@ export const content = {
   },
 
   footer: {
-    description:
-      "Servicio premium de lavado de edredones con recojo y entrega a domicilio.",
+  description:
+    "Edredones Express es un servicio de lavado premium a domicilio especializado en edredones, con recojo y entrega rápida.",
+
+  quickLinks: {
+    title: "Enlaces rápidos",
 
     links: [
-      "Inicio",
-      "Cómo funciona",
-      "Precios",
-      "Contacto",
+      {
+        label: "Inicio",
+        href: "#inicio",
+      },
+
+      {
+        label: "Cómo funciona",
+        href: "#como-funciona",
+      },
+
+      {
+        label: "Precios",
+        href: "#precios",
+      },
+
+      {
+        label: "Cobertura",
+        href: "#cobertura",
+      },
     ],
-
-    contact: {
-      whatsapp: "961 031 558",
-
-      schedule:
-        "Atención todos los días de 8:00 a.m. a 8:00 p.m.",
-    },
   },
 
+  help: {
+    title: "Ayuda",
+
+    links: [
+      {
+        label: "Preguntas frecuentes",
+        href: "#faq",
+      },
+
+      {
+        label: "Información importante",
+        action: "legal",
+      },
+
+      {
+        label: "Contacto",
+        href: "#contacto",
+      },
+    ],
+  },
+
+  contact: {
+    title: "Escríbenos",
+
+    phone: "961 031 558",
+
+    schedule:
+      "Atención todos los días de 8:00 a.m. a 8:00 p.m.",
+  },
+
+  copyright:
+    "© 2026 Edredones Express. Todos los derechos reservados.",
+},
   seo: {
     title:
       "Lavado de Edredones a Domicilio en Lima | Edredones Express",
