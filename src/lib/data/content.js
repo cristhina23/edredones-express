@@ -145,37 +145,35 @@ export const content = {
 
   title: "Sin enredos por tamaños",
 
-  main: {
-    image: "/pricing.png",
+  items: [
+    {
+      image: "/pricing.png",
 
-    label: "Edredones regulares",
+      label: "Edredones regulares",
 
-    description:
-      "Lavado industrial con secado completo para evitar humedad y malos olores.",
+      description:
+        "Lavado premium con secado completo para evitar humedad y malos olores.",
 
-    price: "35",
+      price: "35"
+    },
 
-    note: "+ S/10 por recojo y entrega"
-  },
+    {
+      image: "/pricing.png",
+
+      label: "Edredones plumas",
+
+      description:
+        "Cuidado especial para conservar volumen y suavidad.",
+
+      price: "45"
+    }
+  ],
+
+  note: "+ S/10 por recojo y entrega",
 
   promos: [
-    {
-      quantity: "Edredones plumas",
-      price: "45",
-      save: "Cuidado especial"
-    },
-
-    {
-      quantity: "3 edredones o más",
-      price: null,
-      save: "Consultar por WhatsApp"
-    },
-
-    {
-      quantity: "Rutas programadas",
-      price: null,
-      save: "Consultar por WhatsApp"
-    }
+    "3 edredones o más",
+    "Rutas programadas"
   ],
 
   legal:

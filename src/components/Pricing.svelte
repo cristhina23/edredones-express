@@ -1,6 +1,9 @@
 <script>
   import {
-    BadgeCheck,
+    ShieldCheck,
+    Feather,
+    Gift,
+    Truck,
     MessageCircleMore
   } from 'lucide-svelte';
 
@@ -9,16 +12,16 @@
 
 <section
   id="precios"
-  class="relative py-12 lg:py-16 bg-background overflow-hidden"
+  class="relative py-14 lg:py-18 bg-background overflow-hidden"
 >
 
-  <!-- SOFT GLOWS -->
+  <!-- GLOWS -->
   <div
-    class="absolute top-0 left-[15%] w-[220px] h-[220px] rounded-full bg-accent/10 blur-[120px] pointer-events-none"
+    class="absolute top-0 left-[12%] w-[220px] h-[220px] rounded-full bg-accent/30 blur-[120px] pointer-events-none"
   ></div>
 
   <div
-    class="absolute bottom-0 right-[10%] w-[240px] h-[240px] rounded-full bg-primary/8 blur-[120px] pointer-events-none"
+    class="absolute bottom-0 right-[10%] w-[220px] h-[220px] rounded-full bg-primary/8 blur-[120px] pointer-events-none"
   ></div>
 
   <div
@@ -27,7 +30,7 @@
 
     <!-- CONTAINER -->
     <div
-      class="relative bg-white/70 backdrop-blur-xl border border-black/[0.04] rounded-[2.3rem] px-5 py-6 lg:px-10 lg:py-8 shadow-[0_15px_50px_rgba(0,0,0,0.04)]"
+      class="relative rounded-[2.5rem] border border-black/[0.04] bg-white/75 backdrop-blur-xl px-5 py-8 lg:px-8 lg:py-8 shadow-[0_20px_60px_rgba(0,0,0,0.05)]"
     >
 
       <!-- HEADER -->
@@ -40,195 +43,306 @@
         </span>
 
         <h2
-          class="mt-2 text-[2rem] lg:text-[3rem] leading-[1] tracking-[-0.05em] text-primary"
+          class="mt-3 text-[2.1rem] lg:text-[3.5rem] leading-[0.95] tracking-[-0.05em] text-primary"
         >
           {content.pricing.title}
         </h2>
 
       </div>
 
-      <!-- CONTENT -->
+      <!-- CARDS -->
       <div
-        class="mt-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-5 items-stretch"
+        class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5 items-stretch"
       >
 
-        <!-- LEFT -->
+        <!-- REGULARES -->
         <div
-          class="bg-white rounded-[2rem] border border-black/[0.04] px-5 py-5 lg:px-7 lg:py-6 shadow-[0_10px_30px_rgba(0,0,0,0.03)] flex flex-col sm:flex-row items-center gap-5"
+          class="relative rounded-2xl border border-accent/45 bg-white px-6 py-7 shadow-lg   flex flex-col justify-between"
         >
 
           <!-- IMAGE -->
-          <div class="relative shrink-0">
+          <img
+            src="/pricing.png"
+            alt="Edredones"
+            class="absolute bottom-4 right-4 w-24 opacity-[0.95]"
+          />
 
-            <img
-              src={content.pricing.main.image}
-              alt="Edredones"
-              class="w-[180px] lg:w-[250px] object-contain"
-            />
-
-            <!-- BADGE -->
-            <div
-              class="absolute top-1/2 right-0 -translate-y-1/2 w-14 h-14 rounded-full bg-accent flex items-center justify-center shadow-[0_10px_25px_rgba(201,162,95,0.35)]"
-            >
-              <BadgeCheck
-                size={24}
-                class="text-white"
-              />
-            </div>
-
-          </div>
-
-          <!-- INFO -->
+          <!-- CONTENT -->
           <div
-            class="flex-1 text-center sm:text-left"
+            class="text-center"
           >
 
-            <span
-              class="uppercase tracking-[0.15em] text-primary/80 text-sm font-semibold"
+            <!-- ICON -->
+            <div
+              class="mx-auto w-16 h-16 rounded-full bg-accent/8 flex items-center justify-center"
             >
-              {content.pricing.main.label}
-            </span>
 
-            <p
-              class="mt-1 text-text-soft text-sm leading-relaxed max-w-[260px]"
+              <ShieldCheck
+                size={28}
+                class="text-accent"
+              />
+
+            </div>
+
+            <!-- TITLE -->
+            <h3
+              class="mt-2 uppercase tracking-[0.12em] text-primary text-[0.95rem] font-semibold"
             >
-              {content.pricing.main.description}
+              Edredones regulares
+            </h3>
+
+            <!-- LINE -->
+            <div
+              class="mx-auto mt-4 w-10 h-[2px] rounded-full bg-accent/40"
+            ></div>
+
+            <!-- TEXT -->
+            <p
+              class="mt-4 text-text-soft leading-[1.8] text-[0.98rem]"
+            >
+              Lavado premium con secado completo para evitar humedad y malos olores.
             </p>
 
             <!-- PRICE -->
             <div
-              class="mt-4 flex items-end gap-1 justify-center sm:justify-start"
+              class="mt-7 flex items-end justify-center gap-1"
             >
 
               <span
-                class="text-primary text-[1.7rem] font-semibold"
+                class="text-primary text-[1.2rem]"
               >
                 S/
               </span>
 
               <span
-                class="text-primary text-[4rem] leading-none tracking-[-0.06em]"
+                class="text-primary text-[3.5rem] leading-none tracking-[-0.06em]"
               >
-                {content.pricing.main.price}
+                35
               </span>
 
             </div>
 
+          </div>
+
+          <!-- NOTE -->
+          <div
+            class=" pt-2 border-t border-black/[0.06] flex items-center justify-center gap-3 text-text-soft"
+          >
+
+            <Truck
+              size={16}
+              class="text-accent shrink-0"
+            />
+
             <p
-              class="mt-2 text-sm text-text-soft"
+              class="text-[0.95rem]"
             >
-              {content.pricing.main.note}
+              + S/10 delivery
             </p>
 
           </div>
 
         </div>
 
-        <!-- RIGHT -->
+        <!-- PLUMAS -->
         <div
-          class="relative overflow-visible rounded-[2rem] bg-primary shadow-[0_25px_60px_rgba(25,50,35,0.22)]"
+          class="relative rounded-[2rem] border border-accent/45 bg-white px-6 py-6 shadow-lg flex flex-col justify-between"
         >
 
-          <!-- LIGHT -->
+          <!-- CONTENT -->
           <div
-            class="absolute top-0 right-0 w-[220px] h-[220px] bg-accent/20 blur-[100px]"
-          ></div>
-
-          <!-- EXACT LABEL -->
-          <div
-            class="absolute -top-[8px] -left-2 z-20"
+            class="text-center"
           >
 
+            <!-- ICON -->
             <div
-              class="relative bg-accent text-white px-5 py-2 text-sm font-semibold  rounded-br-md shadow-[0_10px_25px_rgba(201,162,95,0.30)] z-50"
+              class="mx-auto w-16 h-16 rounded-full bg-accent/8 flex items-center justify-center"
             >
-              ¡Ahorra más!
 
-              <!-- LITTLE TAB -->
-              <div
-                class="absolute left-0 bottom-[-8px] w-0 h-0 border-l-[8px] border-l-[#b88d45] border-t-[8px] rotate-[180deg] border-t-transparent"
-              ></div>
-              
+              <Feather
+                size={28}
+                class="text-accent"
+              />
+
+            </div>
+
+            <!-- TITLE -->
+            <h3
+              class="mt-2 uppercase tracking-[0.12em] text-primary text-[0.95rem] font-semibold"
+            >
+              Edredones plumas
+            </h3>
+
+            <!-- LINE -->
+            <div
+              class="mx-auto mt-4 w-10 h-[2px] rounded-full bg-accent/40"
+            ></div>
+
+            <!-- TEXT -->
+            <p
+              class="mt-4 text-text-soft leading-[1.8] text-[0.98rem]"
+            >
+              Cuidado especial para conservar volumen y suavidad.
+            </p>
+
+            <!-- PRICE -->
+            <div
+              class="mt-7 flex items-end justify-center gap-1"
+            >
+
+              <span
+                class="text-primary text-[1.2rem]"
+              >
+                S/
+              </span>
+
+              <span
+                class="text-primary text-[3.5rem] leading-none tracking-[-0.06em]"
+              >
+                45
+              </span>
 
             </div>
 
           </div>
 
+          <!-- NOTE -->
           <div
-            class="relative z-10 px-7 py-6"
+            class="mt-2 pt-5 border-t border-black/[0.06] flex items-center justify-center gap-3 text-text-soft"
           >
 
-            <h3
-              class="uppercase tracking-[0.14em] text-white/90 text-xs font-semibold text-center"
-            >
-              Promociones
-            </h3>
+            <Truck
+              size={16}
+              class="text-accent shrink-0"
+            />
 
-            <!-- LIST -->
+            <p
+              class="text-[0.95rem]"
+            >
+              + S/10 delivery
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- PROMOS -->
+        <div
+          class="relative overflow-visible rounded-[2rem] bg-primary shadow-[0_20px_50px_rgba(25,50,35,0.15)]"
+        >
+
+          <!-- GLOW -->
+          <div
+            class="absolute top-0 right-0 w-[160px] h-[160px] bg-accent/20 blur-[90px]"
+          ></div>
+
+          <!-- LABEL -->
+          <div
+            class="absolute -top-[10px] -left-2 z-20"
+          >
+
             <div
-              class="mt-5 flex flex-col"
+              class="relative bg-accent text-white px-5 py-2.5 text-sm font-semibold rounded-br-lg shadow-[0_10px_25px_rgba(201,162,95,0.30)]"
             >
 
-              {#each content.pricing.promos as promo (promo.quantity)}
+              Promociones
+
+              <!-- TAB -->
+              <div
+                class="absolute left-0 bottom-[-8px] w-0 h-0 border-l-[8px] border-l-[#b88d45] border-t-[8px] rotate-[180deg] border-t-transparent"
+              ></div>
+
+            </div>
+
+          </div>
+
+          <!-- CONTENT -->
+          <div
+            class="relative z-10 px-6 py-7 flex flex-col h-full"
+          >
+
+            <!-- TITLE -->
+            <div
+              class="flex items-center justify-center gap-3 text-center my-8"
+            >
+
+              <Gift
+                size={17}
+                class="text-accent"
+              />
+
+              <h3
+                class="uppercase tracking-[0.14em] text-white text-[0.78rem] font-semibold"
+              >
+                Consulta promociones especiales
+              </h3>
+
+            </div>
+
+            <!-- ITEMS -->
+            <div
+              class="mt-2 flex flex-col"
+            >
+
+              
+              {#each content.pricing.promos as promo (promo)}
 
                 <div
-                  class="flex items-center justify-between py-4 border-b border-white/10 last:border-none"
+                  class="flex items-center justify-between gap-4 py-5 border-b border-white/10 last:border-none"
                 >
 
-                  <h4
-                    class="text-white text-[1.1rem] font-medium"
+                  <!-- LEFT -->
+                  <div
+                    class="flex items-center gap-4"
                   >
-                    {promo.quantity}
-                  </h4>
 
-                  <div class="text-right">
+                    <div
+                      class="w-12 h-12 rounded-full border border-accent/30 flex items-center justify-center shrink-0"
+                    >
 
-                    {#if promo.price}
+                      {#if promo.includes('3')}
 
-                      <div
-                        class="flex items-end gap-1 justify-end"
-                      >
+                        <Gift
+                          size={20}
+                          class="text-accent"
+                        />
 
-                        <span
-                          class="text-accent text-base font-semibold"
-                        >
-                          S/
-                        </span>
+                      {:else}
 
-                        <span
-                          class="text-accent text-[2.2rem] leading-none tracking-[-0.05em]"
-                        >
-                          {promo.price}
-                        </span>
+                        <Truck
+                          size={20}
+                          class="text-accent"
+                        />
 
-                      </div>
+                      {/if}
 
-                      <p
-                        class="mt-1 text-white/50 text-xs"
-                      >
-                        {promo.save}
-                      </p>
+                    </div>
 
-                    {:else}
-
-                      <a
-                        href={`https://wa.me/${content.site.whatsapp}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center gap-2 text-white/85 hover:text-white transition-colors"
-                      >
-
-                        <MessageCircleMore size={16} />
-
-                        <span class="text-sm">
-                          Consulta por WhatsApp
-                        </span>
-
-                      </a>
-
-                    {/if}
+                    <h4
+                      class="text-white text-[1rem] leading-snug font-medium"
+                    >
+                      {promo}
+                    </h4>
 
                   </div>
+
+                  <!-- BUTTON -->
+                  <a
+                    href={`https://wa.me/${content.site.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2 text-accent hover:text-white transition-colors shrink-0"
+                  >
+
+                    <MessageCircleMore size={16} />
+
+                    <span
+                      class="text-[0.95rem]"
+                    >
+                      Consultar
+                    </span>
+
+                  </a>
 
                 </div>
 
@@ -239,6 +353,19 @@
           </div>
 
         </div>
+
+      </div>
+
+      <!-- LEGAL -->
+      <div
+        class="mt-5 rounded-[1.3rem] border border-black/[0.04] bg-background/70 px-5 py-4"
+      >
+
+        <p
+          class="text-sm text-text-soft leading-relaxed text-center"
+        >
+          {content.pricing.legal}
+        </p>
 
       </div>
 
