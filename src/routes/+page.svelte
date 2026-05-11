@@ -8,17 +8,16 @@
   import Coverage from "../components/Coverage.svelte";
   import CTA from "../components/CTA.svelte";
   import Footer from "../components/Footer.svelte";
-  import Contact from "../components/Contact.svelte";
 </script>
 
 <Navbar />
 <Hero />
-<Problem />
+
 <HowItWorks />
 <Pricing />
+<Problem />
 <Features />
 <Coverage />
-<Contact />
 <CTA />
 <Footer />
 

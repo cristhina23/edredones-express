@@ -160,7 +160,7 @@ export const content = {
 
   promos: [
     {
-      quantity: "Edredones de plumas",
+      quantity: "Edredones plumas",
       price: "45",
       save: "Cuidado especial"
     },
@@ -168,13 +168,13 @@ export const content = {
     {
       quantity: "3 edredones o más",
       price: null,
-      save: "Recojo y entrega gratis"
+      save: "Consultar por WhatsApp"
     },
 
     {
       quantity: "Rutas programadas",
       price: null,
-      save: "10% OFF por ventana fija"
+      save: "Consultar por WhatsApp"
     }
   ],
 

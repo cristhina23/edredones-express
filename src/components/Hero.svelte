@@ -16,23 +16,30 @@
 
 <section
   id="inicio"
-  class="relative overflow-hidden bg-[#f7f4ef] w-[100vw] max-h-[130vh]"
+  class="relative overflow-hidden bg-[#f7f4ef] w-[100vw]"
 >
 
   <!-- BACKGROUND IMAGE -->
-  <div class="absolute top-0 right-0 h-full w-[60vw] z-0 pointer-events-none">
+  <div
+    class="absolute top-0 right-0 h-full w-[60vw] z-0 pointer-events-none"
+  >
+
     <img
       src={content.hero.image}
       alt="Lavado de edredones"
       class="w-full h-full object-cover object-right"
     />
-    <!-- Blend with background -->
-    <div class="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-[#f7f4ef] via-[#f7f4ef]/60 to-transparent"></div>
+
+    <!-- OVERLAY -->
+    <div
+      class="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-[#f7f4ef] via-[#f7f4ef]/60 to-transparent"
+    ></div>
+
   </div>
 
   <!-- CONTENT -->
   <div
-    class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-10 pt-28 lg:pt-32 "
+    class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-10 pt-28 lg:pt-32"
   >
 
     <!-- HERO -->
@@ -42,15 +49,28 @@
 
       <!-- LEFT -->
       <div
-        class="max-w-7xl  px-6"
+        class="max-w-7xl px-6"
       >
 
         <!-- BADGE -->
-        <span
-          class="uppercase tracking-[0.28em] text-accent text-[11px] font-semibold"
+      
+
+        <!-- SECOND BADGE -->
+        <div
+          class="mt-3 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-4 py-2"
         >
-          {content.hero.badge}
-        </span>
+
+          <div
+            class="w-2 h-2 rounded-full bg-accent animate-pulse"
+          ></div>
+
+          <span
+            class="text-[11px] uppercase tracking-[0.18em] text-accent font-semibold"
+          >
+            {content.hero.badge2}
+          </span>
+
+        </div>
 
         <!-- TITLE -->
         <h1
@@ -59,6 +79,7 @@
 
           {content.hero.title.line1}
 
+          <br />
 
           {content.hero.title.line2}
 
@@ -77,7 +98,7 @@
           {content.hero.description}
         </p>
 
-        <!-- MINI INFO -->
+        <!-- PRICE CARDS -->
         <div
           class="mt-8 flex flex-wrap gap-4"
         >
@@ -85,27 +106,53 @@
           {#each content.hero.cards as card (card.title)}
 
             <div
-              class="bg-white border border-gray-200 shadow-md rounded-2xl px-4 py-2 flex items-center gap-4"
+              class="bg-white border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.05)] rounded-2xl px-5 py-4 flex items-center gap-4"
             >
 
+              <!-- ICON -->
               <div
-                class="w-11 h-11 rounded-xl bg-accent/10 flex items-center justify-center text-accent shrink-0"
+                class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent shrink-0"
               >
+
                 <BadgeCheck size={18} />
+
               </div>
 
+              <!-- CONTENT -->
               <div>
+
                 <h3
                   class="text-base font-semibold text-primary leading-none"
                 >
                   {card.title}
                 </h3>
 
-                <p
-                  class="text-xs text-text-soft mt-1"
+                <!-- PRICE -->
+                <div
+                  class="mt-2 flex items-end gap-1"
                 >
-                  {card.subtitle}
+
+                  <span
+                    class="text-primary text-sm font-semibold"
+                  >
+                    S/
+                  </span>
+
+                  <span
+                    class="text-primary text-[1.7rem] leading-none tracking-[-0.05em] font-semibold"
+                  >
+                    {card.subtitle.replace('S/', '').trim()}
+                  </span>
+
+                </div>
+
+                <!-- DESCRIPTION -->
+                <p
+                  class="text-xs text-text-soft mt-2"
+                >
+                  {card.description}
                 </p>
+
               </div>
 
             </div>
@@ -133,6 +180,7 @@
             />
 
             <div>
+
               <p
                 class="text-sm font-semibold"
               >
@@ -144,6 +192,7 @@
               >
                 Respuesta inmediata
               </span>
+
             </div>
 
           </a>
@@ -189,7 +238,7 @@
       >
 
         <div
-          class="bg-white rounded-xl border border-accent/70 shadow-md px-6 lg:px-10 py-6 grid grid-cols-2 lg:grid-cols-4 gap-6"
+          class="bg-white rounded-xl border border-accent/70 shadow-[0_15px_40px_rgba(0,0,0,0.05)] px-6 lg:px-10 py-6 grid grid-cols-2 lg:grid-cols-4 gap-6"
         >
 
           <!-- ITEM -->
@@ -200,10 +249,13 @@
             <div
               class="text-accent mt-1 shrink-0"
             >
+
               <House size={22} />
+
             </div>
 
             <div>
+
               <h3
                 class="font-semibold text-primary text-sm"
               >
@@ -213,8 +265,9 @@
               <p
                 class="text-sm text-text-soft mt-1"
               >
-                A domicilio por S/10
+                Solo S/10 ambos tramos
               </p>
+
             </div>
 
           </div>
@@ -227,10 +280,13 @@
             <div
               class="text-accent mt-1 shrink-0"
             >
+
               <ShieldCheck size={22} />
+
             </div>
 
             <div>
+
               <h3
                 class="font-semibold text-primary text-sm"
               >
@@ -240,8 +296,9 @@
               <p
                 class="text-sm text-text-soft mt-1"
               >
-                Profunda
+                Lavado profundo y seguro
               </p>
+
             </div>
 
           </div>
@@ -254,10 +311,13 @@
             <div
               class="text-accent mt-1 shrink-0"
             >
+
               <Clock3 size={22} />
+
             </div>
 
             <div>
+
               <h3
                 class="font-semibold text-primary text-sm"
               >
@@ -267,8 +327,9 @@
               <p
                 class="text-sm text-text-soft mt-1"
               >
-                24–48h
+                48–72h
               </p>
+
             </div>
 
           </div>
@@ -281,21 +342,25 @@
             <div
               class="text-accent mt-1 shrink-0"
             >
+
               <Star size={22} />
+
             </div>
 
             <div>
+
               <h3
                 class="font-semibold text-primary text-sm"
               >
-                Calidad tipo hotel
+                Calidad Premium
               </h3>
 
               <p
                 class="text-sm text-text-soft mt-1"
               >
-                Premium
+                Limpio, seco y esponjoso
               </p>
+
             </div>
 
           </div>
