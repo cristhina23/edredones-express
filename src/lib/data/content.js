@@ -20,16 +20,8 @@ export const content = {
       {
         label: "Precios",
         href: "#precios",
-      },
-      {
-        label: "Nosotros",
-        href: "#nosotros",
-      },
-      {
-        label: "Contacto",
-        href: "#contacto",
-      },
-    ],
+      }
+        ],
 
     cta: {
       text: "Escríbenos por WhatsApp",
@@ -38,7 +30,7 @@ export const content = {
 
   hero: {
     badge: "Lavandería premium a domicilio",
-
+    badge2: "Precio único sin importar el tamaño",
     title: {
       line1: "Lavado de",
       line2: "edredones",
@@ -46,18 +38,21 @@ export const content = {
     },
 
     description:
-      "Recojemos, lavamos y entregamos tu edredón limpio, seco, perfumado y listo para usar en 24–48h.",
+      "Recojemos, lavamos y entregamos tu edredón limpio, seco, perfumado y listo para usar en 48–72h.",
 
     cards: [
       {
-        title: "Precio simple",
-        subtitle: "Sin enredos por tamaños",
+        title: "Edredones Regulares",
+        subtitle: " S/35",
+        description: "Para todos los tamaños",
       },
 
       {
-        title: "Recojo y entrega",
-        subtitle: "A domicilio",
-      },
+        title: "Edredones de Plumas",
+        subtitle: " S/45",
+        description: "Cuidado especial",
+      }
+      
     ],
 
     buttons: {
@@ -82,7 +77,7 @@ export const content = {
 
       {
         title: "Servicio rápido",
-        description: "Entrega en 24–48h",
+        description: "Entrega en 48–72h",
       },
 
       {
@@ -131,7 +126,7 @@ export const content = {
         title: "Recojemos tu edredón",
 
         description:
-          "Pasamos por tu domicilio y lo llevamos a nuestro proceso de limpieza industrial.",
+          "Pasamos por tu domicilio y lo llevamos a nuestro proceso de limpieza Premium.",
       },
 
       {
