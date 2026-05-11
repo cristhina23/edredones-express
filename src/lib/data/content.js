@@ -363,20 +363,13 @@ export const content = {
     title: "Ayuda",
 
     links: [
-      {
-        label: "Preguntas frecuentes",
-        href: "#faq",
-      },
 
       {
         label: "Información importante",
         action: "legal",
-      },
+      }
 
-      {
-        label: "Contacto",
-        href: "#contacto",
-      },
+      
     ],
   },
 

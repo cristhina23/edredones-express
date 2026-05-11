@@ -21,18 +21,23 @@
 
   <!-- BACKGROUND IMAGE -->
   <div
-    class="absolute top-0 right-0 h-full w-[60vw] z-0 pointer-events-none"
+    class="absolute top-0 right-0 h-full w-full lg:w-[60vw] z-0 pointer-events-none"
   >
 
     <img
       src={content.hero.image}
       alt="Lavado de edredones"
-      class="w-full h-full object-cover object-right"
+      class="w-full h-full object-cover object-center lg:object-right opacity-25 lg:opacity-100"
     />
 
-    <!-- OVERLAY -->
+    <!-- OVERLAY MOBILE -->
     <div
-      class="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-[#f7f4ef] via-[#f7f4ef]/60 to-transparent"
+      class="absolute inset-0 bg-gradient-to-b from-[#f7f4ef] via-transparent to-[#f7f4ef] lg:hidden"
+    ></div>
+
+    <!-- OVERLAY DESKTOP -->
+    <div
+      class="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-[#f7f4ef] via-[#f7f4ef]/60 to-transparent hidden lg:block"
     ></div>
 
   </div>
@@ -47,9 +52,9 @@
       class="min-h-[720px] lg:min-h-[760px] flex flex-col"
     >
 
-      <!-- LEFT -->
+      <!-- LEFT / CENTERED ON MOBILE -->
       <div
-        class="max-w-7xl px-6"
+        class="max-w-4xl lg:max-w-7xl mx-auto lg:mx-0 flex flex-col items-center lg:items-start text-center lg:text-left px-4 lg:px-6"
       >
 
         <!-- BADGE -->
@@ -100,7 +105,7 @@
 
         <!-- PRICE CARDS -->
         <div
-          class="mt-8 flex flex-wrap gap-4"
+          class="mt-8 flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 w-full"
         >
 
           {#each content.hero.cards as card (card.title)}
@@ -163,7 +168,7 @@
 
         <!-- BUTTONS -->
         <div
-          class="mt-9 flex flex-wrap gap-4"
+          class="mt-9 flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 w-full"
         >
 
           <!-- PRIMARY -->
@@ -238,7 +243,7 @@
       >
 
         <div
-          class="bg-white rounded-xl border border-accent/70 shadow-[0_15px_40px_rgba(0,0,0,0.05)] px-6 lg:px-10 py-6 grid grid-cols-2 lg:grid-cols-4 gap-6"
+          class="bg-white rounded-xl border border-accent/70 shadow-[0_15px_40px_rgba(0,0,0,0.05)] px-6 lg:px-10 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
 
           <!-- ITEM -->

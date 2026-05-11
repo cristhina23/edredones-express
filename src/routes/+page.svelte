@@ -1,4 +1,4 @@
-<script>
+  <script>
   import Navbar from "../components/Navbar.svelte";
   import Hero from "../components/Hero.svelte";
   import Problem from "../components/Problem.svelte";
@@ -8,6 +8,7 @@
   import Coverage from "../components/Coverage.svelte";
   import CTA from "../components/CTA.svelte";
   import Footer from "../components/Footer.svelte";
+  import WhatsappFloat from "../components/WhatsappFloat.svelte";
 </script>
 
 <Navbar />
@@ -20,5 +21,6 @@
 <Coverage />
 <CTA />
 <Footer />
+<WhatsappFloat />
 
 
