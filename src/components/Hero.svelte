@@ -84,7 +84,6 @@
 
           {content.hero.title.line1}
 
-          <br />
 
           {content.hero.title.line2}
 
