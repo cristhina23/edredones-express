@@ -54,7 +54,7 @@
   });
 </script>
 
-<header class="absolute top-0 left-0 w-full z-50 backdrop-blur-xl shadow-md ">
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl shadow-md bg-white/80">
 
   <nav
     class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between "

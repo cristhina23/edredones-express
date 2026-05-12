@@ -110,7 +110,7 @@
           {#each content.hero.cards as card (card.title)}
 
             <div
-              class="bg-white border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.05)] rounded-2xl px-5 py-4 flex items-center gap-4"
+              class="bg-white border border-gray-200 shadow-lg rounded-2xl px-5 py-4 flex items-center gap-4"
             >
 
               <!-- ICON -->
@@ -126,7 +126,7 @@
               <div>
 
                 <h3
-                  class="text-base font-semibold text-primary leading-none"
+                  class="text-xl font-semibold text-primary leading-none"
                 >
                   {card.title}
                 </h3>
@@ -143,7 +143,7 @@
                   </span>
 
                   <span
-                    class="text-primary text-[1.7rem] leading-none tracking-[-0.05em] font-semibold"
+                    class="text-primary text-5xl leading-none tracking-[-0.05em] font-semibold"
                   >
                     {card.subtitle.replace('S/', '').trim()}
                   </span>
@@ -165,75 +165,7 @@
 
         </div>
 
-        <!-- BUTTONS -->
-        <div
-          class="mt-9 flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 w-full"
-        >
-
-          <!-- PRIMARY -->
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group bg-primary hover:bg-primary-light text-white rounded-2xl px-7 py-4 flex items-center gap-3 shadow-[0_10px_40px_rgba(31,61,43,0.18)] hover:-translate-y-[2px] transition-all duration-500"
-          >
-
-            <Truck
-              size={18}
-              class="group-hover:translate-x-1 transition-transform duration-300"
-            />
-
-            <div>
-
-              <p
-                class="text-sm font-semibold"
-              >
-                {content.hero.buttons.primary}
-              </p>
-
-              <span
-                class="text-xs text-white/70"
-              >
-                Respuesta inmediata
-              </span>
-
-            </div>
-
-          </a>
-
-          <!-- SECONDARY -->
-          <a
-            href="#como-funciona"
-            class="group relative overflow-hidden bg-white text-primary rounded-2xl px-7 py-4 flex items-center gap-3 shadow-md border border-gray-200 transition-all duration-500 hover:-translate-y-[2px]"
-          >
-
-            <!-- ANIMATED BACKGROUND -->
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-accent/30 via-accent/50 to-accent/70 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-700 ease-out"
-            ></div>
-
-            <!-- CONTENT -->
-            <div
-              class="relative z-10 flex items-center gap-3"
-            >
-
-              <ArrowRight
-                size={18}
-                class="group-hover:translate-x-1 group-hover:text-accent transition-all duration-300"
-              />
-
-              <span
-                class="text-sm font-semibold group-hover:text-primary"
-              >
-                {content.hero.buttons.secondary}
-              </span>
-
-            </div>
-
-          </a>
-
-        </div>
-
+        
       </div>
 
       <!-- FEATURES -->
