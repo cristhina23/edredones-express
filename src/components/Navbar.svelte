@@ -73,15 +73,15 @@
 
       <div>
         <h2
-          class="text-primary font-bold text-xl leading-none"
+          class="text-primary font-bold text-xl leading-none font-logo"
         >
-          Edredones
+          EDREDONES
         </h2>
 
         <span
-          class="uppercase tracking-[0.35em] italic text-accent text-xs font-medium"
+          class="uppercase tracking-[0.35em]  text-accent text-xs font-medium font-body text-center flex justify-center items-center"
         >
-          Express
+           EXPRESS 
         </span>
       </div>
     </a>
