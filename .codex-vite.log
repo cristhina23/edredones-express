@@ -777,3 +777,5 @@ https://svelte.dev/e/a11y_click_events_have_key_events
 https://svelte.dev/e/a11y_no_static_element_interactions
 [2m6:55:36 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Navbar.svelte, /src/app.css[22m
 [2m6:55:36 AM[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/components/Navbar.svelte[22m
+[2m6:58:32 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app.css, /src/components/Hero.svelte, /src/components/Problem.svelte, /src/components/Navbar.svelte, /src/components/Coverage.svelte, /src/components/HowItWorks.svelte, /src/components/CTA.svelte, /src/components/Features.svelte, /src/components/Footer.svelte, /src/components/Pricing.svelte, /src/components/WhatsappFloat.svelte[22m
+[2m6:58:32 AM[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m [32mpage reload [39m[2msrc/lib/data/content.js[22m

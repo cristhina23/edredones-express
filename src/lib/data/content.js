@@ -386,18 +386,29 @@ export const content = {
     "© 2026 Edredones Express. Todos los derechos reservados.",
 },
   seo: {
-    title:
-      "Lavado de Edredones a Domicilio en Lima | Edredones Express",
+  title:
+    "Lavado de Edredones en Lima con Recojo y Entrega | Edredones Express",
 
-    description:
-      "Lavado premium de edredones con recojo y entrega a domicilio en Miraflores, San Isidro, Barranco y zonas cercanas.",
+  description:
+    "Lavado premium de edredones en Lima con recojo y entrega a domicilio. Servicio rápido 48–72h, secado completo y cuidado especial para edredones regulares y de plumas.",
 
-    keywords: [
-      "lavado de edredones lima",
-      "lavandería de edredones miraflores",
-      "lavado de edredones a domicilio",
-      "edredones express",
-      "lavandería premium lima",
-    ],
-  },
+  keywords: [
+    "lavado de edredones lima",
+    "lavado de edredones a domicilio lima",
+    "lavandería de edredones lima",
+    "lavado de edredones miraflores",
+    "lavado de edredones san isidro",
+    "lavado de edredones barranco",
+    "lavado de edredones surco",
+    "lavandería premium lima",
+    "lavado de edredones de plumas",
+    "lavado premium de edredones",
+    "edredones express",
+    "lavado de colchas lima",
+    "lavado de duvet lima",
+    "lavado industrial de edredones",
+    "lavandería con delivery lima",
+    "recojo y entrega de edredones"
+  ],
+},
 };

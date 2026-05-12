@@ -7,3 +7,20 @@
  > HMRClient.queueUpdate ../../../../../../@vite/client:200:33
  > handleMessage ../../../../../../@vite/client:942:4
 
+file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/@sveltejs/kit/src/core/config/index.js:28
+			throw new Error(`${relative} is missing ${tag}`);
+			      ^
+
+Error: src\app.html is missing %sveltekit.head%
+    at file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/@sveltejs/kit/src/core/config/index.js:28:10
+    at Array.forEach (<anonymous>)
+    at load_template (file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/@sveltejs/kit/src/core/config/index.js:26:16)
+    at write_server (file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/@sveltejs/kit/src/core/sync/write_server.js:139:14)
+    at Module.server (file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/@sveltejs/kit/src/core/sync/sync.js:95:2)
+    at FSWatcher.<anonymous> (file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/@sveltejs/kit/src/exports/vite/dev/index.js:394:9)
+    at FSWatcher.emit (node:events:524:28)
+    at FSWatcher.emitWithAll (file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/vite/dist/node/chunks/node.js:9585:33)
+    at FSWatcher._emit (file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/vite/dist/node/chunks/node.js:9657:9)
+    at listener (file:///C:/Users/lenovo/Desktop/cristhina/cctechsolutions/edredones-express/node_modules/vite/dist/node/chunks/node.js:8678:64)
+
+Node.js v22.13.0
