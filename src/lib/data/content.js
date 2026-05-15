@@ -2,7 +2,7 @@ export const content = {
   site: {
     name: "Edredones Express",
     tagline: "Limpieza premium a domicilio",
-    whatsapp: "51961031558",
+    whatsapp: "51937746660",
     whatsappMessage:
       "Hola, quiero agendar el recojo de mi edredón.",
   },
