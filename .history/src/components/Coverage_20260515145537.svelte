@@ -106,7 +106,7 @@
           <img
             src={content.coverage.mapImage}
             alt="Mapa de cobertura"
-            class="absolute inset-0 w-full h-[120%] object-cover object-[65%_center]"
+            class="absolute inset-0 w-full h-[120%] object-cover object-[55%_center]"
           />
 
         </div>
