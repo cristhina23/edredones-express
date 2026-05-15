@@ -260,7 +260,7 @@ export const content = {
     "Surquillo",
   ],
 
-  mapImage: "/map2.png",
+  mapImage: "/map.png",
 
   testimonial: {
     image: "/bed.png",

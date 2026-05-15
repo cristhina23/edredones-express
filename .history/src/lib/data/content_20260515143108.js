@@ -257,10 +257,9 @@ export const content = {
     "Miraflores",
     "San Isidro",
     "Barranco",
-    "Surquillo",
   ],
 
-  mapImage: "/map2.png",
+  mapImage: "/map.png",
 
   testimonial: {
     image: "/bed.png",
@@ -377,7 +376,7 @@ export const content = {
   contact: {
     title: "Escríbenos",
 
-    phone: "937 746 660",
+    phone: "",
 
     schedule:
       "Atención todos los días de 8:00 a.m. a 8:00 p.m.",

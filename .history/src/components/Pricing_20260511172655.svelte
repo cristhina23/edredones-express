@@ -61,7 +61,11 @@
         >
 
           <!-- IMAGE -->
-         
+          <img
+            src="/pricing.png"
+            alt="Edredones"
+            class="absolute bottom-4 right-4 w-24 opacity-[0.95]"
+          />
 
           <!-- CONTENT -->
           <div
