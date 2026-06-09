@@ -34,7 +34,7 @@ export const content = {
     title: {
       line1: "Lavado de",
       line2: "edredones",
-      highlight: "sin salir de casa",
+      highlight: "sin salir de casa.",
     },
 
     description:
