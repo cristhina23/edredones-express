@@ -50,7 +50,7 @@ export const content = {
       {
         title: "Edredones de Plumas",
         subtitle: " S/45",
-        description: "Queen - King",
+        description:     "Queen - King",
       }
       
     ],
