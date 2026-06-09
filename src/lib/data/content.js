@@ -34,7 +34,7 @@ export const content = {
     title: {
       line1: "Lavado de",
       line2: "edredones",
-      highlight: "sin salir de casa",
+      highlight: "sin salir de casa.",
     },
 
     description:
@@ -377,7 +377,7 @@ export const content = {
   contact: {
     title: "Escríbenos",
 
-    phone: "937 746 660",
+    phone: "937 609 351",
 
     schedule:
       "Atención todos los días de 8:00 a.m. a 8:00 p.m.",
