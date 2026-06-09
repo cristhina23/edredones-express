@@ -229,7 +229,7 @@
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            onclick={trackWhatsapp}
+            
             class="bg-primary hover:bg-primary-light text-white rounded-2xl px-5 py-4 flex items-center justify-center gap-3 shadow-xl shadow-primary/15 hover:shadow-primary/25 hover:-translate-y-[2px] active:scale-[0.98] transition-all duration-500"
           >
 

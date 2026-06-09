@@ -5,7 +5,7 @@
   } from 'lucide-svelte';
 
   import { content } from '$lib/data/content';
-  import { trackWhatsapp } from '$lib/utils/metaPixel';
+  impo
 
   const whatsappLink = `https://wa.me/${content.site.whatsapp}?text=${content.site.whatsappMessage}`;
 </script>
@@ -143,7 +143,6 @@
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              onclick={trackWhatsapp}
               class="group relative overflow-hidden inline-flex items-center justify-center gap-4 rounded-[1.7rem] bg-primary px-7 py-5 text-white shadow-[0_25px_50px_rgba(25,50,35,0.24)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_35px_70px_rgba(25,50,35,0.30)]"
             >
 

@@ -1,6 +1,6 @@
 <script>
   import { content } from '$lib/data/content';
-  import { trackWhatsapp } from '$lib/utils/metaPixel';
+  import { trackWhatsapp } from '';
   
   // Codificar el mensaje para la URL de WhatsApp
   const whatsappUrl = `https://wa.me/${content.site.whatsapp}?text=${encodeURIComponent(content.site.whatsappMessage)}`;
@@ -22,7 +22,6 @@
     href={whatsappUrl}
     target="_blank"
     rel="noopener noreferrer"
-    onclick={trackWhatsapp}
     class="relative w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center 
            shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_35px_rgba(37,211,102,0.5)] 
            hover:scale-110 transition-all duration-300 active:scale-95"
