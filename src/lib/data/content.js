@@ -44,7 +44,7 @@ export const content = {
       {
         title: "Edredones Regulares",
         subtitle: " S/35",
-        description: "Para todos los tamaños",
+        description: "Para cualquier tamaño",
       },
 
       {
