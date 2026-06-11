@@ -172,7 +172,7 @@ export const content = {
   note: "+ S/10 por recojo y entrega",
 
   promos: [
-    "3 edredones o más DELIVERY GRATIS",
+    "3 EDREDONES O MÁS DELIVERY GRATIS",
     "Rutas programadas"
   ],
 
